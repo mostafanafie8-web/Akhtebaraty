@@ -179,26 +179,40 @@ nav a:hover {
       <button class="tablink" onclick="openTab(event,'pisa-docs')">📄 مكتبة المستندات</button>
     </div>
 
-    <!-- مكتبة الفيديو -->
-    <div id="pisa-video" class="tabcontent" style="display:block">
-      <div class="subsections">
-        <div class="subsection">
-          <h4>📖 القراءة</h4>
-<iframe width="100%" height="300"
-        src="https://www.youtube.com/embed/oC0gQC6jAek"
-        frameborder="0"
-        allowfullscreen>
-</iframe>
-        <div class="subsection">
-          <h4>➗ الرياضيات</h4>
-          <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_MATH" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="subsection">
-          <h4>🔬 العلوم</h4>
-          <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_SCIENCE" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
+   <!-- مكتبة الفيديو -->
+<div id="pisa-video" class="tabcontent" style="display:block">
+  <div class="subsections" style="display:flex; gap:20px; flex-wrap:wrap;">
+    
+    <div class="subsection" style="flex:1; min-width:300px;">
+      <h4>📖 القراءة</h4>
+      <iframe width="100%" height="200"
+              src="https://www.youtube.com/embed/oC0gQC6jAek"
+              frameborder="0"
+              allowfullscreen>
+      </iframe>
     </div>
+
+    <div class="subsection" style="flex:1; min-width:300px;">
+      <h4>➗ الرياضيات</h4>
+      <iframe width="100%" height="200"
+              src="https://www.youtube.com/embed/YOUR_VIDEO_MATH"
+              frameborder="0"
+              allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="subsection" style="flex:1; min-width:300px;">
+      <h4>🔬 العلوم</h4>
+      <iframe width="100%" height="200"
+              src="https://www.youtube.com/embed/YOUR_VIDEO_SCIENCE"
+              frameborder="0"
+              allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+</div>
+
 
     <!-- مكتبة المستندات -->
     <div id="pisa-docs" class="tabcontent">
@@ -515,6 +529,7 @@ function clearResult(){
 
 </body>
 </html>
+
 
 
 
